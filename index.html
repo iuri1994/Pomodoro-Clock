@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomadoro Clock</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="pomodoro_title">Pomodoro Timer</div> 
+    <div class="all_content">
+        <div class="time">
+            <div>
+                <button class="round_button button_plus" id="work_time_plus"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="time_pomadoro"><span></span> MIN  </div>
+            <div>
+                <button class="round_button button_minus" id="work_time_minus"><i class="fas fa-minus"></i></button>
+            </div>
+            <div class="work_break"> WORK</div>
+        </div>
+        <div>
+            <div class="timer">
+                <div class="timer_img">
+                    <img src="img/tomato.png" alt="">
+                </div>
+                <div class="counter">                   
+                    <div id="counter">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="play_stop_reset_buttons">
+                <div class="play_stop" id="play"><i class="far fa-play-circle"></i></div>
+                <div class="play_stop" id="stop"><i class="fas fa-stop"></i></div>
+                <div class="reset" id="reset"><i class="fas fa-redo"></i></div>
+            </div> 
+        </div>
+        
+        <div class="break_time">
+            <div>
+                <button class="round_button button_plus" id="break_time_plus"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="break_time_pomadoro"> <span></span> MIN</div>
+            <div>
+                <button class="round_button button_minus" id="break_time_minus"><i class="fas fa-minus"></i></button>
+            </div>
+            <div class="work_break"> BREAK</div>
+        </div>
+    </div>
+    <div class="work_break" id="work_break"> </div>  
+
+    <script src="https://kit.fontawesome.com/f121abb7d0.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>

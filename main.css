@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+    --button_radius: 60px;
+    --button_radius_active: 50px;
+}
+
+body {
+    margin: 0;
+    top: 0;
+    left: 0;
+    background-image: url("img/background.png");
+}
+
+.all_content {
+    display: flex;
+    flex-direction: row;
+}
+.timer {    
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.timer .counter {
+    position: absolute;
+    top: 140px;
+    width: 50;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 40px;
+}
+.timer_img > img {
+    height: 300px;
+    width: 300px;
+    object-fit: scale-down;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.time, .break_time {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.time .time_pomadoro, .break_time .break_time_pomadoro {
+    margin: 10px 0px;
+    font-size: 40px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.round_button {
+    border-radius: 100%;
+    padding: 0;
+    border: 0;
+    height: var(--button_radius);
+    width: var(--button_radius);
+    font-weight: bold;
+    font-size: 2em;  
+    background-image: radial-gradient(circle, #b5bbc5, #e5edfa);
+    box-shadow: 0px 0px 0px 0.1px #f6f8fb,
+                0px 0px 0px 6px #dfe2e7,
+                -5px 15px 15px  black;
+    
+}
+
+.round_button:active, .round_button:visited {
+    height: var(--button_radius_active);
+    width: var(--button_radius_active);
+}
+.round_button:hover {
+    cursor: pointer;
+}
+
+.play_stop {
+    display:inline-block;
+    color:#444;
+    cursor:pointer;
+    vertical-align:middle;
+    font-size: 50px;
+    padding: 5px;
+    text-align: center;
+}
+.play_stop:active {
+    color:rgb(19, 19, 19); 
+    font-size: 45px;   
+}
+
+.reset {
+    display:inline-block;
+    color:rgb(240, 9, 9);
+    cursor:pointer;
+    vertical-align:middle;
+    font-size: 45px;
+    padding: 5px;
+    text-align: center;
+}
+.reset:active {
+    color:rgb(56, 35, 35);  
+    font-size: 40px;  
+}
+
+.play_stop_reset_buttons { 
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+.pomodoro_title {
+    margin: 20px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 80px;
+    text-align: center;
+}
+
+.work_break {
+    font-size: 40px;
+    text-align: center;
+}
